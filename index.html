@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>こどもあそび</title>
+<meta name="description" content="こども向けの あそびアプリ 15こ。オフラインでも あそべます。">
+<link rel="stylesheet" href="./assets/fonts/fonts.css">
+<link rel="manifest" href="./manifest.webmanifest">
+<meta name="theme-color" content="#ffc2d1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="こどもあそび">
+<link rel="icon" href="./icons/home-192.png">
+<link rel="apple-touch-icon" href="./icons/home-180.png">
+<style>
+:root{
+  --bg1:#fff5f8;--bg2:#eef6ff;--ink:#5b3a52;--sub:#8a6a80;--card-ink:#4a2f44;
+  --shadow:0 6px 18px rgba(120,80,110,.14);--edge:rgba(255,255,255,.85);--chip:rgba(255,255,255,.7);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg1:#241b2e;--bg2:#1b2230;--ink:#ffe6f0;--sub:#c3a8bc;--card-ink:#2b1d28;
+  --shadow:0 6px 18px rgba(0,0,0,.4);--edge:rgba(255,255,255,.22);--chip:rgba(255,255,255,.12);
+}}
+:root[data-theme="dark"]{
+  --bg1:#241b2e;--bg2:#1b2230;--ink:#ffe6f0;--sub:#c3a8bc;--card-ink:#2b1d28;
+  --shadow:0 6px 18px rgba(0,0,0,.4);--edge:rgba(255,255,255,.22);--chip:rgba(255,255,255,.12);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;min-height:100vh;color:var(--ink);
+  background:linear-gradient(165deg,var(--bg1),var(--bg2));
+  font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN",system-ui,sans-serif;font-weight:700;
+  padding:max(20px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(28px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));
+  -webkit-text-size-adjust:100%;
+}
+header{max-width:920px;margin:8px auto 22px;text-align:center}
+h1{font-size:clamp(26px,6vw,38px);font-weight:900;margin:0 0 6px;letter-spacing:.02em}
+h1 .r{font-size:1.1em;vertical-align:-.06em;margin-right:.12em}
+.tag{color:var(--sub);font-size:14px;margin:0}
+.status{display:inline-flex;align-items:center;gap:6px;margin-top:12px;padding:6px 14px;border-radius:999px;
+  background:var(--chip);font-size:13px;color:var(--sub);border:1px solid var(--edge)}
+.status .dot{width:8px;height:8px;border-radius:50%;background:#bbb;transition:background .3s}
+.status.ready .dot{background:#2ecc71}
+.grid{width:100%;max-width:920px;margin:0 auto;display:grid;gap:14px;
+  grid-template-columns:repeat(auto-fill,minmax(min(148px,100%),1fr))}
+.card{
+  min-width:0;overflow-wrap:anywhere;
+  display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:4px;
+  padding:18px 12px 16px;border-radius:22px;text-decoration:none;color:var(--card-ink);
+  background:linear-gradient(160deg,color-mix(in srgb,var(--c) 92%,white),var(--c));
+  box-shadow:var(--shadow);border:2px solid var(--edge);
+  -webkit-tap-highlight-color:transparent;transition:transform .14s ease,box-shadow .14s ease;
+}
+.card:active{transform:scale(.95);box-shadow:0 3px 8px rgba(120,80,110,.18)}
+.emoji{font-size:52px;line-height:1.1;filter:drop-shadow(0 3px 5px rgba(0,0,0,.14))}
+.name{font-weight:900;font-size:15px;text-align:center;line-height:1.35;margin-top:2px;text-wrap:balance}
+.desc{font-size:12px;text-align:center;line-height:1.4;opacity:.72}
+footer{max-width:920px;margin:26px auto 0;text-align:center;color:var(--sub);font-size:12px;line-height:1.8}
+@media (min-width:620px){.grid{gap:18px;grid-template-columns:repeat(auto-fill,minmax(min(170px,100%),1fr))}.emoji{font-size:60px}}
+</style>
+</head>
+<body>
+<header>
+  <h1><span class="r">🌈</span>こどもあそび</h1>
+  <p class="tag">すきな あそびを えらんでね</p>
+  <div class="status" id="status"><span class="dot"></span><span id="statusText">じゅんび ちゅう…</span></div>
+</header>
+<main>
+  <div class="grid">
+      <a class="card" href="./apps/juice-sort/" style="--c:#ffb3c6">
+        <span class="emoji">🧃</span>
+        <span class="name">いろわけ ジュースやさん</span>
+        <span class="desc">おなじ くだものを あつめよう</span>
+      </a>
+      <a class="card" href="./apps/water-delivery/" style="--c:#8ecae6">
+        <span class="emoji">💧</span>
+        <span class="name">おみずを とどけて</span>
+        <span class="desc">みずを おはなに はこぼう</span>
+      </a>
+      <a class="card" href="./apps/candy-factory/" style="--c:#ffc8dd">
+        <span class="emoji">🍬</span>
+        <span class="name">ころころ こうじょう</span>
+        <span class="desc">おかしを ころがして あつめよう</span>
+      </a>
+      <a class="card" href="./apps/flower-field/" style="--c:#ffafcc">
+        <span class="emoji">🌷</span>
+        <span class="name">おはなばたけ</span>
+        <span class="desc">たねを まいて おはなを さかせよう</span>
+      </a>
+      <a class="card" href="./apps/bear-errand/" style="--c:#e6ccb2">
+        <span class="emoji">🐻</span>
+        <span class="name">くまさんの おつかい</span>
+        <span class="desc">たのまれた ものを さがそう</span>
+      </a>
+      <a class="card" href="./apps/bubble-count/" style="--c:#a2d2ff">
+        <span class="emoji">🫧</span>
+        <span class="name">しゃぼんだま いくつ？</span>
+        <span class="desc">かずを かぞえて みよう</span>
+      </a>
+      <a class="card" href="./apps/pattern-train/" style="--c:#ffd6a5">
+        <span class="emoji">🚂</span>
+        <span class="name">つぎは なにかな？</span>
+        <span class="desc">ならびの つづきを あてよう</span>
+      </a>
+      <a class="card" href="./apps/animal-memory/" style="--c:#caffbf">
+        <span class="emoji">🃏</span>
+        <span class="name">どうぶつ しんけいすいじゃく</span>
+        <span class="desc">おなじ どうぶつを さがそう</span>
+      </a>
+      <a class="card" href="./apps/color-mix/" style="--c:#bdb2ff">
+        <span class="emoji">🎨</span>
+        <span class="name">いろまぜ ぷるぷる</span>
+        <span class="desc">いろを まぜて つくろう</span>
+      </a>
+      <a class="card" href="./apps/star-connect/" style="--c:#ffe066">
+        <span class="emoji">⭐</span>
+        <span class="name">ほしつなぎ</span>
+        <span class="desc">ほしを つないで えを かこう</span>
+      </a>
+      <a class="card" href="./apps/block-castle/" style="--c:#ffb4a2">
+        <span class="emoji">🧱</span>
+        <span class="name">つみきの おしろ</span>
+        <span class="desc">つみきを つんで たてよう</span>
+      </a>
+      <a class="card" href="./apps/aquarium/" style="--c:#90e0ef">
+        <span class="emoji">🐠</span>
+        <span class="name">ぐるぐる すいぞくかん</span>
+        <span class="desc">おさかなを みつけよう</span>
+      </a>
+      <a class="card" href="./apps/shadow-match/" style="--c:#b8c0ff">
+        <span class="emoji">🔺</span>
+        <span class="name">かげぴったん</span>
+        <span class="desc">かげと おなじ かたちは どれ？</span>
+      </a>
+      <a class="card" href="./apps/forest-pinball/" style="--c:#c7f9cc">
+        <span class="emoji">🌰</span>
+        <span class="name">もりの ピンボール</span>
+        <span class="desc">どんぐりを ころがそう</span>
+      </a>
+      <a class="card" href="./apps/knock-door/" style="--c:#ffd8be">
+        <span class="emoji">🚪</span>
+        <span class="name">トントン だれかな？</span>
+        <span class="desc">ドアの むこうは だれかな</span>
+      </a>
+  </div>
+</main>
+<footer>
+  ぜんぶ 15こ ・ ホームがめんに ついかすると アプリのように あそべます<br>
+  いちど ひらけば つうしんが なくても あそべます
+</footer>
+<script>
+(function(){
+  var el = document.getElementById('status'), txt = document.getElementById('statusText');
+  if(!('serviceWorker' in navigator)){ txt.textContent = 'ブラウザで あそべます'; return; }
+  navigator.serviceWorker.register('./sw.js').catch(function(){});
+  navigator.serviceWorker.ready.then(function(){
+    el.classList.add('ready');
+    txt.textContent = 'オフラインでも あそべます';
+  }).catch(function(){ txt.textContent = 'ブラウザで あそべます'; });
+})();
+</script>
+</body>
+</html>

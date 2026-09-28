@@ -1,0 +1,33 @@
+{
+  "id": "../../?app=bubble-count",
+  "name": "しゃぼんだま いくつ？",
+  "short_name": "しゃぼんだま",
+  "description": "かずを かぞえて みよう",
+  "start_url": "./",
+  "scope": "../../",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#a2d2ff",
+  "theme_color": "#a2d2ff",
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "../../icons/bubble-count-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "../../icons/bubble-count-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "../../icons/bubble-count-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

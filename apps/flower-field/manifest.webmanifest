@@ -1,0 +1,33 @@
+{
+  "id": "../../?app=flower-field",
+  "name": "おはなばたけ",
+  "short_name": "おはなばたけ",
+  "description": "たねを まいて おはなを さかせよう",
+  "start_url": "./",
+  "scope": "../../",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffafcc",
+  "theme_color": "#ffafcc",
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "../../icons/flower-field-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "../../icons/flower-field-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "../../icons/flower-field-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

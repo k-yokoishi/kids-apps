@@ -1,0 +1,33 @@
+{
+  "id": "../../?app=star-connect",
+  "name": "ほしつなぎ",
+  "short_name": "ほしつなぎ",
+  "description": "ほしを つないで えを かこう",
+  "start_url": "./",
+  "scope": "../../",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffe066",
+  "theme_color": "#ffe066",
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "../../icons/star-connect-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "../../icons/star-connect-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "../../icons/star-connect-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

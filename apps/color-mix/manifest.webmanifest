@@ -1,0 +1,33 @@
+{
+  "id": "../../?app=color-mix",
+  "name": "いろまぜ ぷるぷる",
+  "short_name": "いろまぜ",
+  "description": "いろを まぜて つくろう",
+  "start_url": "./",
+  "scope": "../../",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#bdb2ff",
+  "theme_color": "#bdb2ff",
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "../../icons/color-mix-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "../../icons/color-mix-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "../../icons/color-mix-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

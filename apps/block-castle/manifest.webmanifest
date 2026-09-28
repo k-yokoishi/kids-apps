@@ -1,0 +1,33 @@
+{
+  "id": "../../?app=block-castle",
+  "name": "つみきの おしろ",
+  "short_name": "つみきの",
+  "description": "つみきを つんで たてよう",
+  "start_url": "./",
+  "scope": "../../",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffb4a2",
+  "theme_color": "#ffb4a2",
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "../../icons/block-castle-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "../../icons/block-castle-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "../../icons/block-castle-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

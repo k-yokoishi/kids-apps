@@ -1,0 +1,33 @@
+{
+  "id": "../../?app=knock-door",
+  "name": "トントン だれかな？",
+  "short_name": "トントン",
+  "description": "ドアの むこうは だれかな",
+  "start_url": "./",
+  "scope": "../../",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffd8be",
+  "theme_color": "#ffd8be",
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "../../icons/knock-door-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "../../icons/knock-door-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "../../icons/knock-door-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "../",
+  "name": "こどもあそび",
+  "short_name": "こどもあそび",
+  "description": "こども向けの あそびアプリ 15こ。オフラインでも あそべます。",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#fff5f8",
+  "theme_color": "#ffc2d1",
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "./icons/home-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/home-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/home-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "いろわけ ジュースやさん",
+      "url": "./apps/juice-sort/",
+      "icons": [
+        {
+          "src": "./icons/juice-sort-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "おみずを とどけて",
+      "url": "./apps/water-delivery/",
+      "icons": [
+        {
+          "src": "./icons/water-delivery-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "ころころ こうじょう",
+      "url": "./apps/candy-factory/",
+      "icons": [
+        {
+          "src": "./icons/candy-factory-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "おはなばたけ",
+      "url": "./apps/flower-field/",
+      "icons": [
+        {
+          "src": "./icons/flower-field-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}

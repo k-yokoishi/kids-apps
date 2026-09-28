@@ -1,0 +1,17 @@
+[
+{"slug":"juice-sort","title":"いろわけ ジュースやさん","emoji":"🧃","color":"#ffb3c6","desc":"おなじ くだものを あつめよう"},
+{"slug":"water-delivery","title":"おみずを とどけて","emoji":"💧","color":"#8ecae6","desc":"みずを おはなに はこぼう"},
+{"slug":"candy-factory","title":"ころころ こうじょう","emoji":"🍬","color":"#ffc8dd","desc":"おかしを ころがして あつめよう"},
+{"slug":"flower-field","title":"おはなばたけ","emoji":"🌷","color":"#ffafcc","desc":"たねを まいて おはなを さかせよう"},
+{"slug":"bear-errand","title":"くまさんの おつかい","emoji":"🐻","color":"#e6ccb2","desc":"たのまれた ものを さがそう"},
+{"slug":"bubble-count","title":"しゃぼんだま いくつ？","emoji":"🫧","color":"#a2d2ff","desc":"かずを かぞえて みよう"},
+{"slug":"pattern-train","title":"つぎは なにかな？","emoji":"🚂","color":"#ffd6a5","desc":"ならびの つづきを あてよう"},
+{"slug":"animal-memory","title":"どうぶつ しんけいすいじゃく","emoji":"🃏","color":"#caffbf","desc":"おなじ どうぶつを さがそう"},
+{"slug":"color-mix","title":"いろまぜ ぷるぷる","emoji":"🎨","color":"#bdb2ff","desc":"いろを まぜて つくろう"},
+{"slug":"star-connect","title":"ほしつなぎ","emoji":"⭐","color":"#ffe066","desc":"ほしを つないで えを かこう"},
+{"slug":"block-castle","title":"つみきの おしろ","emoji":"🧱","color":"#ffb4a2","desc":"つみきを つんで たてよう"},
+{"slug":"aquarium","title":"ぐるぐる すいぞくかん","emoji":"🐠","color":"#90e0ef","desc":"おさかなを みつけよう"},
+{"slug":"shadow-match","title":"かげぴったん","emoji":"🔺","color":"#b8c0ff","desc":"かげと おなじ かたちは どれ？"},
+{"slug":"forest-pinball","title":"もりの ピンボール","emoji":"🌰","color":"#c7f9cc","desc":"どんぐりを ころがそう"},
+{"slug":"knock-door","title":"トントン だれかな？","emoji":"🚪","color":"#ffd8be","desc":"ドアの むこうは だれかな"}
+]

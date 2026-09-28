@@ -1,0 +1,33 @@
+{
+  "id": "../../?app=animal-memory",
+  "name": "どうぶつ しんけいすいじゃく",
+  "short_name": "どうぶつ",
+  "description": "おなじ どうぶつを さがそう",
+  "start_url": "./",
+  "scope": "../../",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#caffbf",
+  "theme_color": "#caffbf",
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "../../icons/animal-memory-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "../../icons/animal-memory-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "../../icons/animal-memory-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 /* こどもあそび — オフライン用 Service Worker（tools/build.js が生成） */
-const CACHE = 'kids-apps-f5f9c74c21';
+const CACHE = 'kids-apps-bed44e5233';
 const PRECACHE = [
   "./",
   "./index.html",
@@ -101,7 +101,13 @@ const PRECACHE = [
   "./apps/knock-door/manifest.webmanifest",
   "./icons/knock-door-192.png",
   "./icons/knock-door-512.png",
-  "./icons/knock-door-180.png"
+  "./icons/knock-door-180.png",
+  "./apps/cake-defense/",
+  "./apps/cake-defense/index.html",
+  "./apps/cake-defense/manifest.webmanifest",
+  "./icons/cake-defense-192.png",
+  "./icons/cake-defense-512.png",
+  "./icons/cake-defense-180.png"
 ];
 
 self.addEventListener('install', e => {

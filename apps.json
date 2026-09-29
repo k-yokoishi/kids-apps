@@ -14,5 +14,6 @@
 {"slug": "shadow-match", "title": "かげぴったん", "emoji": "🔺", "color": "#b8c0ff", "desc": "かげと おなじ かたちは どれ？"},
 {"slug": "forest-pinball", "title": "もりの ピンボール", "emoji": "🌰", "color": "#c7f9cc", "desc": "どんぐりを ころがそう"},
 {"slug": "knock-door", "title": "トントン だれかな？", "emoji": "🚪", "color": "#ffd8be", "desc": "ドアの むこうは だれかな"},
-{"slug": "cake-defense", "title": "ケーキを まもろう", "emoji": "🐸", "color": "#e8b4f8", "desc": "カエルさんで ねずみを とめよう"}
+{"slug": "cake-defense", "title": "ケーキを まもろう", "emoji": "🐸", "color": "#e8b4f8", "desc": "カエルさんで ねずみを とめよう"},
+{"slug": "makeup-salon", "title": "おしゃれ メイクやさん", "emoji": "💄", "color": "#f5a3c7", "desc": "すきな いろで おけしょう しよう"}
 ]

@@ -2,7 +2,7 @@
   "id": "../",
   "name": "こどもあそび",
   "short_name": "こどもあそび",
-  "description": "こども向けの あそびアプリ 16こ。オフラインでも あそべます。",
+  "description": "こども向けの あそびアプリ 17こ。オフラインでも あそべます。",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

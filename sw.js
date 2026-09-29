@@ -1,5 +1,5 @@
 /* こどもあそび — オフライン用 Service Worker（tools/build.js が生成） */
-const CACHE = 'kids-apps-bed44e5233';
+const CACHE = 'kids-apps-3cb3afe471';
 const PRECACHE = [
   "./",
   "./index.html",
@@ -107,7 +107,13 @@ const PRECACHE = [
   "./apps/cake-defense/manifest.webmanifest",
   "./icons/cake-defense-192.png",
   "./icons/cake-defense-512.png",
-  "./icons/cake-defense-180.png"
+  "./icons/cake-defense-180.png",
+  "./apps/makeup-salon/",
+  "./apps/makeup-salon/index.html",
+  "./apps/makeup-salon/manifest.webmanifest",
+  "./icons/makeup-salon-192.png",
+  "./icons/makeup-salon-512.png",
+  "./icons/makeup-salon-180.png"
 ];
 
 self.addEventListener('install', e => {
